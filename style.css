@@ -1,7 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
   
 html, body {
@@ -12,12 +11,12 @@ html, body {
 .container {
     width: 100%;
 }
-header {
-    background-repeat: no-repeat;
-    width: 100%;
+
+ul {
+    list-style: none;
 }
 
-.profile-header {
+.navbar {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -25,69 +24,41 @@ header {
     height: 200px;
     background:url("https://images.unsplash.com/photo-1529218402470-5dec8fea0761?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49d0fac0740352b13fac2117184acbc2&auto=format&fit=crop&w=2578&q=80");
 }
-header ul {
-    list-style: none;
+
+.navbar li {
+    color: white;
 }
 
-.nav-items {
+.nav-items-right, .nav-items-left {
+    padding: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-.profile-header li {
-    color: white;
+.nav-items-right li, .nav-items-left li {
+    margin: 0 8px;
 }
 
 .name {
-    position: absolute;
-    margin: auto;
-    top: 80px;
-    right: 0;
-    left: 0;
+
     text-align: center;
     color: white;
 }
+.profile {
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+}
 
-.profil-photo {
-    position: absolute;
-    margin: auto;
-    top: 150px;
-    right: 0;
-    left: 0;
+.profile-image {
     width: 100px;
     height: 100px;
     border: 3px solid white;
     border-radius: 50%;
     background: white;
-    overflow: hidden;
 }
-.profil-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.nav-items-right {
-    padding: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.nav-items-left {
-    padding: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-.nav-items-right li, .nav-items-left li {
-    margin: 0 8px;
-}
-
 .profile-stats {
-    position: relative;
-    top:70px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -110,8 +81,6 @@ header ul {
     justify-content: center;
 }
 button {
-    position: relative;
-    top: 70px;
     width: 180px;
     height: 30px;
     border: none;
@@ -121,7 +90,8 @@ button {
     outline: none;
 }
 
-hr {
-    position: relative;
-    top: 90px;
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: red;
 }
