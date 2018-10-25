@@ -1,4 +1,4 @@
-* {
+html, body {
     margin: 0;
     /* box-sizing: border-box; */
 }
@@ -40,15 +40,11 @@ ul {
     margin: 0 8px;
 }
 
-.name {
-
-    text-align: center;
-    color: white;
-}
 .profile {
     position: relative;
-    bottom: 40px;
+    top: -70px;
     text-align: center;
+    margin-bottom: -80px;
 }
 
 .profile-image {
@@ -58,6 +54,8 @@ ul {
     border-radius: 50%;
     background: white;
 }
+
+
 .profile-stats {
     display: flex;
     flex-flow: row wrap;
@@ -79,19 +77,22 @@ ul {
 .profile-folowing-btn {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
-button {
+
+/* button {
     width: 180px;
     height: 30px;
     border: none;
     font-size: 15px;    
-    color: white;
+    color: white !important;
     background: rgb(28, 184, 65); 
     outline: none;
-}
+} */
 
-.card {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-}
+/* .cards {
+   margin: 20px;
+   display: inline-block;
+} */
+
+.card {display:inline-block;}
